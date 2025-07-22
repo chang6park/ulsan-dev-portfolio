@@ -5,6 +5,12 @@ import { Code, Smartphone, Brain, Globe } from "lucide-react";
 const SkillsSection = () => {
   const skillCategories = [
     {
+      icon: <Globe className="w-8 h-8" />,
+      title: "의료정보시스템",
+      description: "X Platform HiMED UX Studio 개발 경험",
+      skills: ["X Platform", "HiMED", "UX Studio", "간호시스템", "병동관리", "투약관리", "신생아관리"]
+    },
+    {
       icon: <Code className="w-8 h-8" />,
       title: "웹 개발",
       description: "Python Django를 활용한 백엔드 개발",
@@ -12,21 +18,15 @@ const SkillsSection = () => {
     },
     {
       icon: <Smartphone className="w-8 h-8" />,
-      title: "모바일 개발", 
-      description: "Android 네이티브 앱 개발 경험",
-      skills: ["Android", "Java", "Kotlin", "Android Studio", "SQLite", "API 연동"]
+      title: "시스템 운영",
+      description: "하드웨어 및 네트워크 관리, 보안 시스템 운영",
+      skills: ["하드웨어 관리", "시스템 운영", "Genian NAC", "원격제어", "리모트뷰", "네트워크 보안"]
     },
     {
       icon: <Brain className="w-8 h-8" />,
       title: "인공지능",
       description: "AI 모델 구축 및 머신러닝 프로젝트",
       skills: ["Machine Learning", "Deep Learning", "TensorFlow", "PyTorch", "Data Analysis", "Model Training"]
-    },
-    {
-      icon: <Globe className="w-8 h-8" />,
-      title: "플랫폼 개발",
-      description: "X 플랫폼 개발 경험 및 다양한 기술 스택",
-      skills: ["Cross Platform", "API Development", "System Design", "Version Control", "Testing", "Deployment"]
     }
   ];
 

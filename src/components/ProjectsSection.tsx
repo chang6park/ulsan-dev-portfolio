@@ -6,6 +6,26 @@ import { ExternalLink, Github } from "lucide-react";
 const ProjectsSection = () => {
   const projects = [
     {
+      title: "HiMED UX Studio 의료시스템",
+      description: "X Platform 기반 의료정보시스템 개발. 간호, 병동, 투약, 신생아 관리 모듈을 담당하여 사용자 친화적인 의료진 워크플로우를 구현했습니다.",
+      image: "/api/placeholder/400/250",
+      technologies: ["X Platform", "HiMED", "UX Studio", "의료정보시스템", "간호관리", "병동관리"],
+      links: {
+        github: "#",
+        demo: "#"
+      }
+    },
+    {
+      title: "병원 시스템 운영 관리",
+      description: "경북대학교병원에서 하드웨어 관리, 네트워크 보안, 원격제어 시스템 운영. Genian NAC를 통한 네트워크 접근 제어 및 리모트뷰 시스템 관리.",
+      image: "/api/placeholder/400/250",
+      technologies: ["Genian NAC", "리모트뷰", "하드웨어 관리", "시스템 운영", "네트워크 보안"],
+      links: {
+        github: "#",
+        demo: "#"
+      }
+    },
+    {
       title: "Django 웹 애플리케이션",
       description: "Python Django를 활용한 풀스택 웹 애플리케이션 개발. 사용자 인증, CRUD 기능, 반응형 UI를 구현했습니다.",
       image: "/api/placeholder/400/250",
@@ -16,30 +36,10 @@ const ProjectsSection = () => {
       }
     },
     {
-      title: "Android 모바일 앱",
-      description: "네이티브 Android 앱 개발. 로컬 데이터베이스 연동, REST API 통신, 사용자 친화적 UI/UX를 구현했습니다.",
-      image: "/api/placeholder/400/250",
-      technologies: ["Android", "Java", "SQLite", "Retrofit", "Material Design"],
-      links: {
-        github: "#",
-        demo: "#"
-      }
-    },
-    {
       title: "AI 머신러닝 모델",
       description: "딥러닝을 활용한 이미지 분류 모델 구축. 데이터 전처리부터 모델 훈련, 평가까지 전체 파이프라인을 구현했습니다.",
       image: "/api/placeholder/400/250",
       technologies: ["Python", "TensorFlow", "Keras", "NumPy", "Pandas"],
-      links: {
-        github: "#",
-        demo: "#"
-      }
-    },
-    {
-      title: "크로스 플랫폼 프로젝트",
-      description: "X 플랫폼을 활용한 다중 플랫폼 지원 애플리케이션. 효율적인 코드 재사용과 플랫폼별 최적화를 구현했습니다.",
-      image: "/api/placeholder/400/250",
-      technologies: ["Cross Platform", "API", "Database", "UI Framework"],
       links: {
         github: "#",
         demo: "#"
