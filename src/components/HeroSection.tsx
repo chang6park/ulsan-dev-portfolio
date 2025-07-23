@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { MapPin, School, GraduationCap, Mail, Phone } from "lucide-react";
+import uuhLogo from "@/assets/uuh-logo.png";
 
 const HeroSection = () => {
   return (
@@ -22,10 +23,10 @@ const HeroSection = () => {
                 <p className="text-accent text-lg font-medium">울산대학교병원 IT팀 신입개발자</p>
               </div>
               
-              <div className="space-y-4">
+                <div className="space-y-4">
                 <div className="flex items-center space-x-3 text-muted-foreground text-sm">
                   <span className="font-medium">생년월일:</span>
-                  <span>1997년 02월 04일</span>
+                  <span>1998년 09월 14일</span>
                 </div>
                 
                 <div className="flex items-center space-x-3 text-muted-foreground">
@@ -41,8 +42,9 @@ const HeroSection = () => {
                 <div className="flex items-center space-x-3 text-muted-foreground">
                   <GraduationCap className="w-5 h-5 text-primary" />
                   <div>
-                    <div>부경대학교 위성정보시스템공학 전공</div>
-                    <div className="text-xs opacity-80">컴퓨터공학 복수전공</div>
+                    <div>부경대학교 졸업</div>
+                    <div className="text-sm">위성정보시스템공학 전공</div>
+                    <div className="text-sm">컴퓨터공학 복수전공</div>
                   </div>
                 </div>
                 
@@ -53,7 +55,7 @@ const HeroSection = () => {
                 
                 <div className="flex items-center space-x-3 text-muted-foreground">
                   <Phone className="w-5 h-5 text-primary" />
-                  <span>010-0000-0000</span>
+                  <span>010-4339-2487</span>
                 </div>
               </div>
             </CardContent>
@@ -61,30 +63,35 @@ const HeroSection = () => {
 
           {/* 메인 소개 */}
           <div className="text-center lg:text-left">
-            <h2 className="text-5xl lg:text-6xl font-bold mb-6">
-              안녕하세요!
-              <br />
-               <div className="flex items-center justify-center lg:justify-start gap-3">
-                 <img 
-                   src="/src/assets/uuh-logo.png" 
-                   alt="울산대학교병원 로고" 
-                   className="w-12 h-12 rounded-full"
-                 />
-                 <span className="bg-gradient-hero bg-clip-text text-transparent">
-                   울산대학교병원
-                 </span>
-               </div>
-              <br />
-              IT팀 박창준입니다
-            </h2>
+            <div className="flex items-center justify-center lg:justify-start gap-3 mb-6">
+              <img 
+                src={uuhLogo} 
+                alt="울산대학교병원 로고" 
+                className="w-16 h-16 rounded-full"
+              />
+              <h1 className="text-3xl lg:text-4xl font-bold">
+                <span className="bg-gradient-hero bg-clip-text text-transparent">
+                  울산대학교병원
+                </span>
+                <br />
+                IT팀 박창준
+              </h1>
+            </div>
             
-            <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-              의료 정보 시스템과 다양한 플랫폼 개발 경험을 바탕으로 
-              <br />
-              환자 중심의 혁신적인 의료 IT 솔루션을 만들어가는 
-              <br />
-              열정적인 개발자입니다.
-            </p>
+            <div className="mb-6">
+              <h2 className="text-2xl font-semibold mb-4">소개</h2>
+              <p className="text-lg text-muted-foreground mb-4 leading-relaxed">
+                의료 정보 시스템과 다양한 플랫폼 개발 경험을 바탕으로 
+                환자 중심의 혁신적인 의료 IT 솔루션을 만들어가는 
+                열정적인 개발자입니다.
+              </p>
+              <div>
+                <h3 className="text-lg font-medium mb-2">취미</h3>
+                <p className="text-muted-foreground">
+                  야구, 헬스, 노래 부르기/듣기, 보드게임
+                </p>
+              </div>
+            </div>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Button 

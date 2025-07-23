@@ -1,19 +1,20 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Building, MapPin, Calendar, Award } from "lucide-react";
+import { Building } from "lucide-react";
+import uuhLogo from "@/assets/uuh-logo.png";
 
 const AboutSection = () => {
   const experiences = [
     {
-      icon: <Building className="w-5 h-5" />,
+      icon: <img src={uuhLogo} alt="울산대학교병원" className="w-8 h-8 rounded-full" />,
       title: "울산대학교병원 IT팀",
       period: "현재",
-      role: "신입개발자",
+      role: "신입개발자", 
       description: "의료 정보 시스템 개발 및 운영",
       type: "current"
     },
     {
-      icon: <Building className="w-5 h-5" />,
+      icon: <Building className="w-8 h-8" />,
       title: "경북대학교병원 의료정보과",
       period: "계약직",
       role: "전산직",
@@ -21,7 +22,7 @@ const AboutSection = () => {
       type: "experience"
     },
     {
-      icon: <Building className="w-5 h-5" />,
+      icon: <Building className="w-8 h-8" />,
       title: "부산지방항공청",
       period: "인턴",
       role: "청년인턴",
@@ -83,30 +84,6 @@ const AboutSection = () => {
           ))}
         </div>
 
-        {/* 추가 정보 */}
-        <div className="mt-16 text-center">
-          <Card className="max-w-2xl mx-auto bg-gradient-card">
-            <CardContent className="p-8">
-              <div className="grid md:grid-cols-3 gap-6">
-                <div className="text-center">
-                  <MapPin className="w-8 h-8 text-primary mx-auto mb-2" />
-                  <h3 className="font-semibold mb-1">거주지</h3>
-                  <p className="text-sm text-muted-foreground">울산광역시 남목</p>
-                </div>
-                <div className="text-center">
-                  <Award className="w-8 h-8 text-primary mx-auto mb-2" />
-                  <h3 className="font-semibold mb-1">전문분야</h3>
-                  <p className="text-sm text-muted-foreground">의료정보시스템<br />X Platform 개발</p>
-                </div>
-                <div className="text-center">
-                  <Calendar className="w-8 h-8 text-primary mx-auto mb-2" />
-                  <h3 className="font-semibold mb-1">목표</h3>
-                  <p className="text-sm text-muted-foreground">환자 중심<br />의료 IT 혁신</p>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-        </div>
       </div>
     </section>
   );
