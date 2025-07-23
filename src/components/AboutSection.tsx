@@ -2,6 +2,8 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Building } from "lucide-react";
 import uuhLogo from "@/assets/uuh-logo.png";
+import knuhLogo from "@/assets/knuh-logo.png";
+import busanLogo from "@/assets/busan-aviation-logo.png";
 
 const AboutSection = () => {
   const experiences = [
@@ -14,7 +16,7 @@ const AboutSection = () => {
       type: "current"
     },
     {
-      icon: <Building className="w-8 h-8" />,
+      icon: <img src={knuhLogo} alt="경북대학교병원" className="w-8 h-8 rounded-full" />,
       title: "경북대학교병원 의료정보과",
       period: "계약직",
       role: "전산직",
@@ -22,7 +24,7 @@ const AboutSection = () => {
       type: "experience"
     },
     {
-      icon: <Building className="w-8 h-8" />,
+      icon: <img src={busanLogo} alt="부산지방항공청" className="w-8 h-8 rounded-full" />,
       title: "부산지방항공청",
       period: "인턴",
       role: "청년인턴",
