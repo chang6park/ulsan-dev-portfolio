@@ -11,17 +11,26 @@ const HeroSection = () => {
           <Card className="bg-gradient-card">
             <CardContent className="p-8">
               <div className="text-center mb-6">
-                <div className="w-32 h-32 bg-gradient-hero rounded-full mx-auto mb-4 flex items-center justify-center shadow-glow">
-                  <span className="text-4xl font-bold text-primary-foreground">박</span>
+                <div className="w-32 h-32 rounded-full mx-auto mb-4 overflow-hidden shadow-glow border-4 border-primary/20">
+                  <img 
+                    src="/lovable-uploads/aa690b30-2e03-4150-bf0c-318077132163.png" 
+                    alt="박창준 프로필 사진" 
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                  <h1 className="text-3xl font-bold mb-2">박창준</h1>
                 <p className="text-accent text-lg font-medium">울산대학교병원 IT팀 신입개발자</p>
               </div>
               
               <div className="space-y-4">
+                <div className="flex items-center space-x-3 text-muted-foreground text-sm">
+                  <span className="font-medium">생년월일:</span>
+                  <span>1997년 02월 04일</span>
+                </div>
+                
                 <div className="flex items-center space-x-3 text-muted-foreground">
                   <MapPin className="w-5 h-5 text-primary" />
-                  <span>울산광역시 남목</span>
+                  <span>울산광역시 동구 서부동</span>
                 </div>
                 
                 <div className="flex items-center space-x-3 text-muted-foreground">
@@ -31,12 +40,15 @@ const HeroSection = () => {
                 
                 <div className="flex items-center space-x-3 text-muted-foreground">
                   <GraduationCap className="w-5 h-5 text-primary" />
-                  <span>부경대학교 졸업</span>
+                  <div>
+                    <div>부경대학교 위성정보시스템공학 전공</div>
+                    <div className="text-xs opacity-80">컴퓨터공학 복수전공</div>
+                  </div>
                 </div>
                 
                 <div className="flex items-center space-x-3 text-muted-foreground">
                   <Mail className="w-5 h-5 text-primary" />
-                  <span>your.email@example.com</span>
+                  <span>ckdwns2487@uuh.ulsan.kr</span>
                 </div>
                 
                 <div className="flex items-center space-x-3 text-muted-foreground">
@@ -52,9 +64,16 @@ const HeroSection = () => {
             <h2 className="text-5xl lg:text-6xl font-bold mb-6">
               안녕하세요!
               <br />
-              <span className="bg-gradient-hero bg-clip-text text-transparent">
-                울산대학교병원
-              </span>
+               <div className="flex items-center justify-center lg:justify-start gap-3">
+                 <img 
+                   src="/src/assets/uuh-logo.png" 
+                   alt="울산대학교병원 로고" 
+                   className="w-12 h-12 rounded-full"
+                 />
+                 <span className="bg-gradient-hero bg-clip-text text-transparent">
+                   울산대학교병원
+                 </span>
+               </div>
               <br />
               IT팀 박창준입니다
             </h2>
