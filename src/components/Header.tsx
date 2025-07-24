@@ -1,5 +1,3 @@
-import { Button } from "@/components/ui/button";
-
 const Header = () => {
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -9,53 +7,41 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 w-full bg-background/80 backdrop-blur-sm border-b z-50">
-      <div className="container mx-auto px-4 py-4">
-        <nav className="flex items-center justify-between">
-          <div className="text-xl font-bold bg-gradient-hero bg-clip-text text-transparent">
-            Portfolio
-          </div>
-          
-          <div className="hidden md:flex space-x-6">
+    <header className="fixed top-0 w-full bg-[rgb(2,161,192)] border-b z-50">
+      <div className="container mx-auto px-4 py-2">
+        <nav className="flex items-center justify-center">
+          <div className="hidden md:flex space-x-8">
             <button 
               onClick={() => scrollToSection('home')}
-              className="text-foreground hover:text-primary transition-colors"
-            >
-              홈
-            </button>
-            <button 
-              onClick={() => scrollToSection('about')}
-              className="text-foreground hover:text-primary transition-colors"
+              className="text-white px-4 py-1 rounded-lg transition-all duration-300 hover:bg-white/20 hover:scale-110 hover:font-bold"
             >
               소개
             </button>
             <button 
+              onClick={() => scrollToSection('about')}
+              className="text-white px-4 py-1 rounded-lg transition-all duration-300 hover:bg-white/20 hover:scale-110 hover:font-bold"
+            >
+              경력
+            </button>
+            <button 
               onClick={() => scrollToSection('skills')}
-              className="text-foreground hover:text-primary transition-colors"
+              className="text-white px-4 py-1 rounded-lg transition-all duration-300 hover:bg-white/20 hover:scale-110 hover:font-bold"
             >
               기술
             </button>
             <button 
               onClick={() => scrollToSection('projects')}
-              className="text-foreground hover:text-primary transition-colors"
+              className="text-white px-4 py-1 rounded-lg transition-all duration-300 hover:bg-white/20 hover:scale-110 hover:font-bold"
             >
               프로젝트
             </button>
             <button 
               onClick={() => scrollToSection('contact')}
-              className="text-foreground hover:text-primary transition-colors"
+              className="text-white px-4 py-1 rounded-lg transition-all duration-300 hover:bg-white/20 hover:scale-110 hover:font-bold"
             >
-              연락처
+              깃허브
             </button>
           </div>
-
-          <Button 
-            variant="hero" 
-            size="sm"
-            onClick={() => scrollToSection('contact')}
-          >
-            연락하기
-          </Button>
         </nav>
       </div>
     </header>

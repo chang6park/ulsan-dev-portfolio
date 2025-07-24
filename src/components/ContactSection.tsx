@@ -1,5 +1,4 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import { Github } from "lucide-react";
 
 const ContactSection = () => {
@@ -7,26 +6,24 @@ const ContactSection = () => {
     <section id="contact" className="py-20 bg-secondary/20">
       <div className="container mx-auto px-4">
         <div className="text-center">
-          <Card className="max-w-md mx-auto bg-gradient-card">
+          <Card className="max-w-md mx-auto bg-card border shadow-sm hover:shadow-glow transition-all duration-300 hover:-translate-y-2">
             <CardHeader>
               <CardTitle className="text-2xl">GitHub</CardTitle>
             </CardHeader>
             <CardContent className="text-center">
-              <Button
-                variant="outline"
-                size="lg"
-                asChild
+              <a 
+                href="https://github.com/chang6park"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors p-4 rounded-lg"
               >
-                <a 
-                  href="https://github.com/yourusername"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center space-x-2"
-                >
-                  <Github className="w-6 h-6" />
-                  <span>GitHub 프로필</span>
-                </a>
-              </Button>
+                <img 
+                  src="/images/github.png" 
+                  alt="GitHub" 
+                  className="w-6 h-6"
+                />
+                <span className="text-lg">https://github.com/chang6park</span>
+              </a>
             </CardContent>
           </Card>
         </div>

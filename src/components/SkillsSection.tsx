@@ -1,33 +1,38 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Code, Smartphone, Brain, Globe } from "lucide-react";
+import { 
+  Stethoscope,
+  Laptop,
+  BookOpen,
+  Brain 
+} from "lucide-react";
 
 const SkillsSection = () => {
   const skillCategories = [
     {
-      icon: <Globe className="w-8 h-8" />,
+      icon: <Stethoscope className="w-8 h-8" />,
       title: "의료정보시스템",
-      description: "X Platform HiMED UX Studio 개발 경험",
-      skills: ["X Platform", "HiMED", "UX Studio", "간호시스템", "병동관리", "투약관리", "신생아관리"]
+      description: "X Platform UX Studio 개발 경험",
+      skills: ["X Platform", "UX Studio", "간호시스템(병동,투약)", "모바일 EMR"]
     },
     {
-      icon: <Code className="w-8 h-8" />,
-      title: "웹 개발",
-      description: "Python Django를 활용한 백엔드 개발",
-      skills: ["Python", "Django", "HTML/CSS", "JavaScript", "REST API", "Database"]
-    },
-    {
-      icon: <Smartphone className="w-8 h-8" />,
-      title: "시스템 운영",
-      description: "하드웨어 및 네트워크 관리, 보안 시스템 운영",
-      skills: ["하드웨어 관리", "시스템 운영", "Genian NAC", "원격제어", "리모트뷰", "네트워크 보안"]
+      icon: <Laptop className="w-8 h-8" />,
+      title: "애플리케이션 개발",
+      description: "웹, 앱 서비스 개발 경험",
+      skills: ["Python", "Django", "Android studio"]
     },
     {
       icon: <Brain className="w-8 h-8" />,
       title: "인공지능",
-      description: "AI 모델 구축 및 머신러닝 프로젝트",
-      skills: ["Machine Learning", "Deep Learning", "TensorFlow", "PyTorch", "Data Analysis", "Model Training"]
-    }
+      description: "AI 모델 구축 및 데이터 분석",
+      skills: ["딥러닝", "TensorFlow", "멀티모달", "데이터 분석"]
+    },
+    {
+      icon: <BookOpen className="w-8 h-8" />,
+      title: "자격증",
+      description: "보유 자격증 현황",
+      skills: ["정보처리기사", "SQLD", "데이터분석준전문가", "네트워크관리사 2급"]
+    },
   ];
 
   return (
@@ -35,7 +40,7 @@ const SkillsSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">
-            기술 <span className="bg-gradient-hero bg-clip-text text-transparent">스택</span>
+            <span className="bg-gradient-hero bg-clip-text text-transparent">기술 스택</span>
           </h2>
           <p className="text-xl text-muted-foreground">
             다양한 분야에서의 개발 경험과 기술력을 보유하고 있습니다

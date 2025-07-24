@@ -8,7 +8,12 @@ export default defineConfig(({ mode }) => ({
   server: {
     host: "::",
     port: 8080,
+    fs: {
+      strict: false,
+      allow: ['..']
+    }
   },
+  root: process.cwd(),
   plugins: [
     react(),
     mode === 'development' &&
@@ -16,7 +21,7 @@ export default defineConfig(({ mode }) => ({
   ].filter(Boolean),
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "./src"),
+      "@": path.resolve("./src"),
     },
   },
 }));
