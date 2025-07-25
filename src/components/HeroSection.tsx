@@ -24,9 +24,9 @@ const HeroSection = () => {
               
               <div className="mb-8">
                 <p className="text-xl font-semibold text-foreground mb-4 leading-relaxed">
-                  "안녕하십니까. 제 경험과 성장을 바탕으로<br />
-                  울산대학교병원에서 의료 IT 솔루션을 만들고자하는<br />
-                  개발자 박창준입니다."
+                  "안녕하십니까. <br />
+                   여러번의실패에도 포기하지않은<br />
+                   울산대병원 개발자 박창준입니다."
                 </p>
               </div>
             </div>
@@ -103,7 +103,7 @@ const HeroSection = () => {
                       야구, 헬스(3대 460), 보드게임, 기타연주, 노래방
                     </div>
                   </div>
-                  <div className="flex items-center text-sm text-muted-foreground mt-[2px]">
+                  <div className="flex items-center text-sm text-muted-foreground mt-0">
                     <Heart className="w-4 h-4 text-primary mr-1" />
                     <span className="text-destructive font-medium">솔로(애인 구함)</span>
                   </div>
