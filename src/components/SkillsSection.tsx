@@ -19,7 +19,7 @@ const SkillsSection = () => {
       icon: <Laptop className="w-8 h-8" />,
       title: "애플리케이션 개발",
       description: "웹, 앱 서비스 개발 경험",
-      skills: ["Python", "Django", "Android studio"]
+      skills: ["Python", "Django", "Java", "Android studio"]
     },
     {
       icon: <Brain className="w-8 h-8" />,
