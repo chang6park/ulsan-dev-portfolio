@@ -92,7 +92,6 @@ const HeroSection = () => {
                     <Phone className="w-5 h-5 text-primary" />
                     <span>010-4339-2487</span>
                   </div>
-
                   <div className="flex items-start space-x-3 text-muted-foreground pt-2 border-t">
                     <div className="flex items-center space-x-2">
                       <Circle className="w-4 h-4 text-primary" />
@@ -100,10 +99,13 @@ const HeroSection = () => {
                       <Dumbbell className="w-4 h-4 text-primary" />
                       <Music className="w-4 h-4 text-primary" />
                     </div>
-                    <div className="flex flex-col items-start text-left w-full">
-                      <div className="text-sm">야구, 헬스(3대 460), 보드게임, 기타연주, 노래방</div>
-                      <div className="text-sm mt-1 flex items-center text-left"><Heart className="w-4 h-4 text-primary mr-1" /><span className="text-destructive font-medium">솔로(애인 구함)</span></div>
+                    <div className="text-sm text-left w-full">
+                      야구, 헬스(3대 460), 보드게임, 기타연주, 노래방
                     </div>
+                  </div>
+                  <div className="flex items-center text-sm text-muted-foreground mt-2">
+                    <Heart className="w-4 h-4 text-primary mr-1" />
+                    <span className="text-destructive font-medium">솔로(애인 구함)</span>
                   </div>
                 </div>
               </CardContent>
