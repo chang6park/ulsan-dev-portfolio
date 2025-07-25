@@ -103,7 +103,7 @@ const HeroSection = () => {
                       야구, 헬스(3대 460), 보드게임, 기타연주, 노래방
                     </div>
                   </div>
-                  <div className="flex items-center text-sm text-muted-foreground mt-2">
+                  <div className="flex items-center text-sm text-muted-foreground mt-1">
                     <Heart className="w-4 h-4 text-primary mr-1" />
                     <span className="text-destructive font-medium">솔로(애인 구함)</span>
                   </div>
