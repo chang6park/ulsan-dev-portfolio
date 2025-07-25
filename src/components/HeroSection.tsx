@@ -93,7 +93,7 @@ const HeroSection = () => {
                     <span>010-4339-2487</span>
                   </div>
                   <div className="flex items-start space-x-3 text-muted-foreground pt-2 border-t">
-                    <div className="flex items-center space-x-2">
+                    <div className="flex items-center space-x-0.5">
                       <Circle className="w-4 h-4 text-primary" />
                       <Gamepad2 className="w-4 h-4 text-primary" />
                       <Dumbbell className="w-4 h-4 text-primary" />
