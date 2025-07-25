@@ -100,7 +100,7 @@ const HeroSection = () => {
                       <Dumbbell className="w-4 h-4 text-primary" />
                       <Music className="w-4 h-4 text-primary" />
                     </div>
-                    <div className="flex flex-col items-start">
+                    <div className="flex flex-col items-start text-left w-full">
                       <div className="text-sm">야구, 헬스(3대 460), 보드게임, 기타연주, 노래방</div>
                       <div className="text-sm mt-1 flex items-center text-left"><Heart className="w-4 h-4 text-primary mr-1" /><span className="text-destructive font-medium">솔로(애인 구함)</span></div>
                     </div>
