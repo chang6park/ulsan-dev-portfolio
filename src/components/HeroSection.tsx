@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { MapPin, Mail, Phone, Calendar, Heart, School, BookOpen } from "lucide-react";
+import { MapPin, Mail, Phone, Calendar, Heart, School, BookOpen, Gamepad2, Music, Dumbbell } from "lucide-react";
 
 const HeroSection = () => {
   return (
@@ -93,10 +93,14 @@ const HeroSection = () => {
                     <span>010-4339-2487</span>
                   </div>
 
-                  <div className="flex items-center space-x-3 text-muted-foreground pt-2 border-t">
-                    <Heart className="w-5 h-5 text-primary" />
+                  <div className="flex items-start space-x-3 text-muted-foreground pt-2 border-t">
+                    <div className="flex items-center space-x-2">
+                      <Gamepad2 className="w-4 h-4 text-primary" />
+                      <Dumbbell className="w-4 h-4 text-primary" />
+                      <Music className="w-4 h-4 text-primary" />
+                    </div>
                     <div>
-                      <div className="text-sm">야구, 헬스, 보드게임, 기타연주, 노래방 | <span className="text-destructive font-medium">솔로(애인 구함)</span></div>
+                      <div className="text-sm">야구, 헬스, 보드게임, 기타연주, 노래방 | <Heart className="w-4 h-4 text-primary inline mx-1" /><span className="text-destructive font-medium">솔로(애인 구함)</span></div>
                     </div>
                   </div>
                 </div>
