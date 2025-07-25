@@ -25,7 +25,7 @@ const HeroSection = () => {
               <div className="mb-8">
                 <p className="text-xl font-semibold text-foreground mb-4 leading-relaxed">
                   "안녕하십니까. <br />
-                   여러번의실패에도 포기하지않은<br />
+                   여러 번의 실패에도 포기하지않은<br />
                    울산대병원 개발자 박창준입니다."
                 </p>
               </div>
